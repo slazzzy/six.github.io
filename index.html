@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-<script src="my.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="my.js"></script>
 </head>
+
 <body>
-<div class="one">
-    <header class="gl">
-        Вычисление цены товара
-    </header>
-    <hr>
-    Инструмент
-    <form>
-    <select name="prodType">
-        <option value="1">Лопатка</option>
-        <option value="2">Палка</option>
-        <option value="3">Кирка</option>
-        </select>
-        
-        <p>Материал</p>
-        <div  id="radios"  style="display:none;">
-          <label><input type="radio" name="prodOptions" value="option1"></label>Бронза
-          <label><input type="radio" name="prodOptions" value="option2"></label>Серебро
-          <label><input type="radio" name="prodOptions" value="option3"></label>Золото
-        </div>
+    <div class="one">
+        <header class="gl">
+            Вычисление цены товара
+        </header>
+        <hr>
+        Выбери предмет
+        <form>
+            <select name="prodType">
+                <option value="1">Рука</option>
+                <option value="2">Нога</option>
+                <option value="3">Голова</option>
+            </select>
+
+            <p>Материал</p>
+            <div id="radios" style="display:none;">
+                <label><input type="radio" name="prodOptions" value="option1"></label>Кожа
+                <label><input type="radio" name="prodOptions" value="option2"></label>Кожа vip
+                <label><input type="radio" name="prodOptions" value="option3"></label>Кожа super vip
+            </div>
         </form>
         <br>
-     Упаковка :
-     <div id="checkboxes" style="display:none;">
-    <label><input type="checkbox" name="prop1">Deluxe</label>
-    <label><input type="checkbox" name="prop2">Enhanced</label> 
-    </div>
+        Упаковка :
+        <div id="checkboxes" style="display:none;">
+            <label><input type="checkbox" name="prop1">Плохая</label>
+            <label><input type="checkbox" name="prop2">Хорошая</label>
+        </div>
 
-    <section>
-  
-   <p> <input name = "field2" type="text" required  placeholder="Введите количество"></p>
-   <div id="prodPrice">0</div>
-    
-    
-</section>
-   
-</div>
+        <section>
+
+            <p> <input name="field2" type="text" required placeholder="Введите количество"></p>
+            <div id="prodPrice">0</div>
+
+
+        </section>
+
+    </div>
 </body>
 
 
